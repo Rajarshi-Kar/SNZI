@@ -1,5 +1,3 @@
-Here is a **minimal temporary README** you can use now. Paste this into `README.md`.
-
 ---
 
 # SNZI – Societal Neglected Zone Identifier
@@ -64,3 +62,4 @@ MODEL_PATH=models/yolov8_baseline.pt
 * Full datasets and model weights are not stored in Git.
 
 ---
+
