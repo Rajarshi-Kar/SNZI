@@ -1,5 +1,3 @@
----
-
 # SNZI – Societal Neglected Zone Identifier
 
 ## Overview
@@ -60,6 +58,3 @@ MODEL_PATH=models/yolov8_baseline.pt
 
 * This README is temporary and will be expanded later.
 * Full datasets and model weights are not stored in Git.
-
----
-
