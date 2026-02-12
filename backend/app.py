@@ -1,6 +1,7 @@
 import os 
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
+from models.inference.detector import run_inference
 
 load_dotenv()
 
@@ -12,11 +13,19 @@ def health():
 
 @app.route("/upload-image", methods=["POST"])
 def upload_image():
-    if 'image' not in request.files:
-        return jsonify({"error": "File is required"}), 400
-    
-    image = request.files['image']
+    if "image" not in request.files:
+        return jsonify({"error": "image file is required"}), 400
 
-    image_bytes = file.read()
+    image = request.files["image"]
+    image_bytes = image.read()
+
+    detections = run_inference(image_bytes)
+
+    return jsonify({
+        "image_id": "mock-id",
+        "detections": detections,
+        "model_version": os.getenv("MODEL_PATH", "unknown")
+    })
+
 
 
