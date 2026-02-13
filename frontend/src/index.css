@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-around;
+    height: auto !important;
+  }
+
+  .sidebar p {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+
+
