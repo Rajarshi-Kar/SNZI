@@ -1,3 +1,5 @@
 .env
+models/weights/
+models/**/*.pt
 node_modules
 dist
