@@ -27,5 +27,8 @@ def upload_image():
         "model_version": os.getenv("MODEL_PATH", "unknown")
     })
 
+if __name__ == "__main__":
+    app.run(debug=True)
+
 
 
